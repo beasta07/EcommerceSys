@@ -1,3 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* index.css */
+/* index.css */
+.custom-radio {
+    appearance: none;
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 2px solid #000;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: border-color 0.3s, background-color 0.3s;
+  }
+  
+  .custom-radio:checked {
+    background-color: #000;
+    border-color: #000;
+  }
+  
+  .custom-radio:checked::after {
+    content: '';
+    width: 0.75rem;
+    height: 0.75rem;
+    background-color: #fff;
+    border-radius: 50%;
+    display: block;
+  }
+  

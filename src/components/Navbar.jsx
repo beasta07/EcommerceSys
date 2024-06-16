@@ -5,9 +5,14 @@ import { CiShoppingCart } from "react-icons/ci";
 import { IoIosArrowDown } from "react-icons/io";
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { AiOutlineClose } from 'react-icons/ai'; // Close icon
+import { useNavigate } from 'react-router-dom';
 
 export default function Navbar() {
-  const [textIndex, setTextIndex] = useState(0);
+ const navigate = useNavigate() 
+  const handleClick = () => {
+    navigate("/")
+  }
+    const [textIndex, setTextIndex] = useState(0);
   const [menuOpen, setMenuOpen] = useState(false);
   const [slideDownVisible, setSlideDownVisible] = useState(false); // State for slide-down screen
   const texts = [
@@ -19,7 +24,7 @@ export default function Navbar() {
   useEffect(() => {
     const interval = setInterval(() => {
       setTextIndex(prevIndex => (prevIndex + 1) % texts.length);
-    }, 3000); // Change text every 3 seconds
+    }, 2000); // Change text every 3 seconds
 
     return () => clearInterval(interval);
   }, []);
@@ -50,7 +55,7 @@ export default function Navbar() {
       </div>
 
       <div className='text-black bg-white text-sm font-bold flex justify-between items-center px-5'>
-        <img src='images/logo.jpg' alt='logo' className='h-24 ' />
+        <img src='images/logo.jpg' alt='logo' className='h-24 ' onClick={handleClick} />
         <div className='hidden md:flex text-center items-center font-semibold gap-16'>
           <h1>MEN</h1>
           <h1>WOMEN</h1>

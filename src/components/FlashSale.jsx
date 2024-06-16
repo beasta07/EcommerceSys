@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import Slider from 'react-slick';
 
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 const FlashSale = () => {
   // Slider settings
   const settings = {
@@ -76,7 +78,7 @@ const FlashSale = () => {
             <div className='px-2'>
               <div className='hover:border hover:border-black bg-[#F1F2F7]'>
                 <img src='/images/FlashSale1.jpg' alt='Product 1' className='w-full' />
-                <div className='flex flex-col md:flex-row -mt-[2rem] md:w-[17rem]'>
+                <div className='flex flex-col sm:flex-row -mt-[2rem] sm:w-[17rem] mr-[2rem]'>
                   <p className='mx-5 px-2 py-1 bg-white z-10'>
                     <span className='line-through'>Rs 14000.00</span>
                   </p>

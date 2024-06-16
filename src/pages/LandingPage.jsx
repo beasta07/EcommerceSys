@@ -14,7 +14,6 @@ import Footer from '../components/Footer';
 const LandingPage = () => {
   return (
     <div>
-      <Navbar/>
       <div className='bg-[#D8DBE1]'>
         <div className='container'>
         <div className='sm:flex  pt-[2rem]  '>
@@ -96,7 +95,6 @@ const LandingPage = () => {
 
     <Sales/>
     <hr className="border border-gray-100 my-[4rem]" />
-   <Footer/>
     </div>
   )
 }

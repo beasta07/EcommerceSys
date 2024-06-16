@@ -1,13 +1,25 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import LandingPage from './pages/LandingPage'
+import SelectClothes from './pages/SelectClothes';
+import Checkout from './pages/CheckoutPage'
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
-// import Navbar from './components/Navbar';
-// // import Products from './components/Products';
-import LandingPage from './pages/LandingPage';
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-export default function App() {
+const App = () => {
   return (
     <>
-      <LandingPage />
+    <Router>
+      <Navbar/>
+      <Routes>
+        <Route path ='/' element={<LandingPage/>} />
+        <Route path ='/SelectClothes' element={  <SelectClothes />} />
+        <Route path ='/Checkout' element={  <Checkout />} />
+      </Routes>
+    </Router>
+    <Footer/>
     </>
-  )
+)
+  
 }
+
+export default App
