@@ -57,7 +57,7 @@ const FlashSale = () => {
         <div className='sm:flex justify-between'>
           <div className='sm:flex gap-16'>
             <h1 className='text-4xl font-semibold mt-[2rem]'>Flash Sale</h1>
-            <div className='sm:text-center text-2xl sm:flex justify-center gap-3 mt-[2rem] w-[50rem]'>
+            <div className='sm:text-center text-2xl sm:flex justify-center gap-0 mt-[2rem]  flex '>
               <span className='bg-black text-white sm:px-3 sm:py-2 py-3 px-4 h-10 mr-5 sm:mr-0 rounded-md'>{formatTime(days)}</span>
               <span className='mr-3 sm:mr-0'>:</span>
               <span className='bg-black text-white sm:px-3 sm:py-2  py-3 px-4 h-10 mr-5 sm:mr-0 rounded-md'>{formatTime(hours)}</span>

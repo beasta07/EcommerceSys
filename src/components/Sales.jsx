@@ -33,7 +33,7 @@ const Sales = () => {
           Top Trending
         </button>
       </div>
-      <div className='mt-16 w-[26rem] sm:w-full px-[2rem]'>
+      <div className='mt-16 w-[26rem] sm:w-full px-[0rem]'>
         <Slider {...settings}>
           {/* Each slide wrapped in a div */}
           <div className='px-2'>
