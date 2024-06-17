@@ -1,25 +1,26 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
+    "./node_modules/tw-elements-react/dist/js/**/*.js"
   ],
   theme: {
+    screens: {
+      'sm': '500px',
+      'md': '768px',
+      'lg': '904px',
+      'xl': '1200px',
+      '2xl': '1400px',
+    },
     extend: {
-      fontFamily: {
-        sans: ['League Spartan', 'sans-serif'],
-      },
       container: {
         center: true,
-        padding: {
-          DEFAULT: '4rem',
-          sm: '2rem',
-          lg: '4rem',
-          xl: '4rem',
-          '2xl': '4rem',
-        },
+        padding: '0.1rem',
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require("tw-elements-react/dist/plugin.cjs")
+  ],
 }

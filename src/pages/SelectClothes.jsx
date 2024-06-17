@@ -61,12 +61,12 @@ const SelectClothes = () => {
   return (
       <div className="page-container transition-opacity duration-500">
         <div className="container w-[100%] mx-auto mt-[2rem]">
-          <div className="sm:flex gap-[8rem] px-5 sm:px-0">
+          <div className="lg:flex gap-[8rem] px-5 lg:px-0">
             <div>
               <div className="relative">
                 <img
                   src={images[currentImageIndex]}
-                  className="w-[120rem] sm:h-[35rem] h-[20rem] object-cover object-top mb-4 sm:rounded-xl"
+                  className="w-[120rem] lg:h-[35rem] h-[20rem] object-cover object-top mb-4 lg:rounded-xl"
                 />
                 <button
                   onClick={previousImage}
@@ -81,19 +81,19 @@ const SelectClothes = () => {
                   <HiOutlineChevronRight className="text-gray-700" />
                 </button>
               </div>
-              <div className="flex gap-6 mt-4 sm:ml-0 -ml-[3rem]">
+              <div className="flex gap-6 mt-4 lg:ml-0 -ml-[3rem]">
                 {images.map((image, index) => (
                   <img
                     key={index}
                     src={image}
-                    className="w-16 sm:rounded-xl cursor-pointer transition duration-300 transform hover:scale-105"
+                    className="w-16 lg:rounded-xl cursor-pointer transition duration-300 transform hover:scale-105"
                     onClick={() => changeImage(index)}
                   />
                 ))}
               </div>
             </div>
             <div className="font-semibold mt-[5rem] ">
-              <div className="sm:flex flex gap-10 justify-between">    
+              <div className="lg:flex flex gap-10 justify-between">    
                           <div className="flex gap-2" onClick={backButton}>
                 <IoArrowBack className="mt-[0.4rem]"  />
                 <p className="text-lg mt-[0.1rem] font-normal">Back</p>
@@ -122,7 +122,7 @@ const SelectClothes = () => {
                   </div>
                 ))}
               </div>
-              <div className="flex sm:mb-0 mb-2">
+              <div className="flex lg:mb-0 mb-2">
                 <div className="border font-normal border-gray-300 p-5 flex mr-4 rounded-xl transition duration-300">
                   <div
                     onClick={() => setCount(Math.max(1, count - 1))}

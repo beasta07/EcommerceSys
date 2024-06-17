@@ -6,7 +6,7 @@ import { FaXTwitter } from "react-icons/fa6";
 const Footer = () => {
   return (
     <div className='bg-[#D8DBE1]'>
-        <div className='sm:container  px-[2rem] '>
+        <div className='lg:container  px-[2rem] '>
         <div className='flex justify-between pt-10 gap-12'>
             <div>
                 <h1 className='font-semibold text-xl'>Subscribe to our Newsletter </h1>
@@ -20,21 +20,21 @@ const Footer = () => {
     <FaLinkedin /> 
 </div>
                     </div>
-                    <div className='hidden sm:block'>
+                    <div className='hidden lg:block'>
                     <h1 className='font-semibold text-xl'>Info </h1>
                     <p className='text-gray-600  mt-2'>Terms of Service</p>
                     <p className='text-gray-600  mt-2'>Accessibility Statement</p>
                     <p className='text-gray-600  mt-2'>Cookie Policy</p>
                     <p className='text-gray-600  mt-2'>Contact Information</p>
                     </div>
-                    <div className='hidden sm:block'>
+                    <div className='hidden lg:block'>
                     <h1 className='font-semibold text-xl'>About Policies </h1>
                     <p className='text-gray-600  mt-2'>About Us</p>
                     <p className='text-gray-600  mt-2'>FAQ</p>
                     <p className='text-gray-600  mt-2'>Shipping Information</p>
                     <p className='text-gray-600  mt-2'>Customer Support</p>
                     </div>
-                    <div className='hidden sm:block'>
+                    <div className='hidden lg:block'>
                     <h1 className='font-semibold text-xl'>New Arrivals </h1>
                     <p className='text-gray-600  mt-2'>Best Sellers</p>
                     <p className='text-gray-600  mt-2'>Sale Items</p>
@@ -44,15 +44,15 @@ const Footer = () => {
         </div>
         </div>
         <hr className='border-spacing-0 border-black '/>
-        <div className='sm:flex sm:container px-[2rem]  justify-between py-8' >
-            <div className='hidden sm:block' >
+        <div className='lg:flex lg:container px-[2rem]  justify-between py-8' >
+            <div className='hidden lg:block' >
 
 @2024 Ecommerce Collection. All Rights Reserved
 
 Privacy Policy | Terms & Conditions
 
 </div>
-<div className=''>Designed & Developed By <span className='font-semibold sm:font-normal'>SysQube Technologies</span>
+<div className=''>Designed & Developed By <span className='font-semibold lg:font-normal'>SysQube Technologies</span>
     </div>
     </div>
     </div>

@@ -53,10 +53,10 @@ export default function Navbar() {
   };
 
   return (
-    <>
-      <div className='text-white bg-black text-sm font-bold py-2 flex justify-between items-center px-4'>
+    <div>
+      <div className='text-white bg-black text-sm font-bold py-2 flex justify-between items-center px-2'>
         <div className='flex justify-center w-full '>
-          <div className='flex items-center justify-center sm:ml-40 ml-4 gap-1'>
+          <div className='flex items-center justify-center lg:ml-40 ml-4 gap-1'>
             <span className='animate-pulse'>SIGN UP NOW FOR 20% OFF</span>
             <IoIosArrowDown 
               className='text-[1.25rem] cursor-pointer animate-pulse'
@@ -65,20 +65,17 @@ export default function Navbar() {
             />
           </div>
         </div>
-        <div className='hidden sm:block'>
-          <div className='flex space-x-4 font-normal sm:w-96'>
+        <div className='hidden lg:block'>
+          <div className='flex space-x-4 font-normal lg:w-96'>
             <h1>Find a store</h1>
-            <h1>|</h1>
             <h1>Help</h1>
-            <h1>|</h1>
             <h1>Join Us</h1>
-            <h1>|</h1>
             <h1>Sign In</h1>
           </div>
         </div>
       </div>
 
-      <div className='text-black bg-white text-sm font-bold flex justify-between items-center px-5'>
+      <div className='container text-black bg-white text-sm font-bold flex justify-between items-center  px-1'>
         <img src='images/logo.jpg' alt='logo' className='h-24 ' onClick={() => navigate("/")} />
         <div className='hidden md:flex text-center items-center font-semibold gap-16'>
           {menuItems.map(item => (
@@ -103,8 +100,8 @@ export default function Navbar() {
           ))}
         </div>
 
-        <div className='flex items-center gap-8'>
-          <div className='flex items-center bg-gray-100 rounded-3xl px-4 py-2'>
+        <div className='flex items-center gap-8 md:gap-2'>
+          <div className='flex items-center bg-gray-100 rounded-3xl  px-4 py-2'>
             <IoMdSearch className='text-[1.25rem]' />
             <input 
               placeholder='Search' 
@@ -112,7 +109,7 @@ export default function Navbar() {
             />
           </div>
           
-          <CiHeart className='text-2xl hover:text-red-700 hidden sm:block'/>
+          <CiHeart className='text-2xl hover:text-red-700 hidden lg:block'/>
           <CiShoppingCart className='text-2xl' />
 
           <div className='md:hidden'>
@@ -147,14 +144,8 @@ export default function Navbar() {
             onClick={() => setDropdownOpen(null)}
           />
         </div>
-        <div className='p-4'>
-          <ul>
-            <li>Special 1</li>
-            <li>Special 2</li>
-            <li>Special 3</li>
-          </ul>
-        </div>
+
       </div>
-    </>
+    </div>
   );
 }

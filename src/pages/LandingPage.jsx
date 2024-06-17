@@ -12,14 +12,13 @@ const LandingPage = () => {
   return (
     <div className='overflow-x-hidden'>
       <div className='bg-[#D8DBE1]'>
-        <div className='container mx-auto px-4'>
-          <div className='sm:flex pt-8'>
-            <div className='flex flex-col items-start sm:mt-36 sm:w-1/2'>
+        <div className='container mx-auto px-4 my-auto'>
+          <div className='lg:flex pt-8'>
+            <div className='flex flex-col items-start lg:mt-36 md:my-8 lg:w-1/2'>
               <h1 className='text-lg mb-4'>Fashion Show with the Designer</h1>
-              <p className='sm:text-4xl text-2xl font-semibold leading-tight sm:w-96'>
-                Find The Best Clothing
-                <br className='block sm:hidden' />
-                Collection
+              <p className='lg:text-4xl text-2xl font-semibold leading-tight lg:w-96'>
+                Find The Best Clothing 
+                 Collection
               </p>
               <p className='text-gray-500 mt-4'>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptas pariatur, quam dolore suscipit magnam odit quo commodi amet incidunt perspiciatis quis provident iure in hic veniam dignissimos, rerum maxime!
@@ -28,8 +27,8 @@ const LandingPage = () => {
                 SHOP NOW
               </button>
             </div>
-            <div className='sm:w-1/2 flex justify-center sm:justify-end mt-8 sm:mt-0'>
-              <img src='images/home.png' className='lg:h-80 md:h-32 object-contain' alt='Fashion Show' />
+            <div className='lg:w-1/2 flex justify-center lg:justify-end mt-8 lg:mt-0'>
+              <img src='images/home.png' className='  object-contain' alt='Fashion Show' />
             </div>
           </div>
         </div>
@@ -37,10 +36,10 @@ const LandingPage = () => {
       
       <Products />
       
-      <hr className="border border-gray-100 py-4 hidden sm:block" />
+      <hr className="border border-gray-100 py-4 hidden lg:block" />
       
-      <div className='hidden sm:block bg-black pb-32 pt-20'>
-        <div className='container mx-auto px-4 flex justify-around text-white'>
+      <div className='hidden lg:block bg-black pb-32 pt-20'>
+        <div className='container mx-auto px-4 flex justify-around md:gap-2 text-white'>
           <div className='flex items-center gap-4'>
             <div className='border border-gray-300 rounded-full p-2'>
               <LiaShippingFastSolid className='text-3xl' />
@@ -68,7 +67,7 @@ const LandingPage = () => {
               <p>24 hours a day, 7 days a week</p>
             </div>
           </div>
-          <div className='flex items-center gap-4'>
+          <div className='flex items-center gap-4 md:hidden'>
             <div className='border border-gray-300 rounded-full p-2'>
               <RiMoneyRupeeCircleLine className='text-3xl' />
             </div>

@@ -7,7 +7,7 @@ const FlashSale = () => {
   // Slider settings
   const settings = {
     infinite: true,
-    slidesToShow: 5,
+    slidesToShow: 4,
     slidesToScroll: 1,
     speed: 500,
     cssEase: "linear",
@@ -15,14 +15,31 @@ const FlashSale = () => {
     dots: false,
     responsive: [
       {
-        breakpoint: 900 , // breakpoint for tablets and below
+        breakpoint: 1024 , // breakpoint for tablets and below
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 3,
           slidesToScroll: 1,
           autoplay: true,
           autoplaySpeed: 2000,
         }
-      }
+      },{  breakpoint: 768 , // breakpoint for tablets and below
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 2000,} 
+      },{  breakpoint: 768 , // breakpoint for tablets and below
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 2000,} 
+      },{  breakpoint: 1535 , // breakpoint for tablets and below
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 2000,} }
     ]
   };
 
@@ -53,18 +70,18 @@ const FlashSale = () => {
 
   return (
     <div className='bg-[white] mt-[5rem]'>
-      <div className='sm:container px-[2rem] '>
-        <div className='sm:flex justify-between'>
-          <div className='sm:flex gap-16'>
+      <div className='lg:container px-[2rem] '>
+        <div className='lg:flex justify-between'>
+          <div className='lg:flex gap-16'>
             <h1 className='text-4xl font-semibold mt-[2rem]'>Flash Sale</h1>
-            <div className='sm:text-center text-2xl sm:flex justify-center gap-0 mt-[2rem]  flex '>
-              <span className='bg-black text-white sm:px-3 sm:py-2 py-3 px-4 h-10 mr-5 sm:mr-0 rounded-md'>{formatTime(days)}</span>
-              <span className='mr-3 sm:mr-0'>:</span>
-              <span className='bg-black text-white sm:px-3 sm:py-2  py-3 px-4 h-10 mr-5 sm:mr-0 rounded-md'>{formatTime(hours)}</span>
-              <span className='mr-3 sm:mr-0'> :</span>
-              <span className='bg-black text-white sm:px-3 sm:py-2  py-3 px-4 h-10 mr-5 sm:mr-0 rounded-md'>{formatTime(minutes)}</span>
-              <span className='mr-3 sm:mr-0'>:</span>
-              <span className='bg-black text-white sm:px-3 sm:py-2  py-3 px-4 h-10 mr-5 sm:mr-0 rounded-md'>{formatTime(seconds)}</span>
+            <div className='lg:text-center text-2xl lg:flex justify-center gap-0 mt-[2rem]  flex '>
+              <span className='bg-black text-white lg:px-3 lg:py-2 py-3 px-4 h-10 mr-5 lg:mr-0 rounded-md'>{formatTime(days)}</span>
+              <span className='mr-3 lg:mr-0'>:</span>
+              <span className='bg-black text-white lg:px-3 lg:py-2  py-3 px-4 h-10 mr-5 lg:mr-0 rounded-md'>{formatTime(hours)}</span>
+              <span className='mr-3 lg:mr-0'> :</span>
+              <span className='bg-black text-white lg:px-3 lg:py-2  py-3 px-4 h-10 mr-5 lg:mr-0 rounded-md'>{formatTime(minutes)}</span>
+              <span className='mr-3 lg:mr-0'>:</span>
+              <span className='bg-black text-white lg:px-3 lg:py-2  py-3 px-4 h-10 mr-5 lg:mr-0 rounded-md'>{formatTime(seconds)}</span>
             </div>
           </div>
           <button className='flex justify-end mt-[2rem] bg-transparent border border-black text-black px-20 py-3 hover:bg-black hover:text-white'>
@@ -75,11 +92,12 @@ const FlashSale = () => {
         <div className='my-16 pb-[4rem]'>
           <Slider {...settings}>
             {/* Each slide wrapped in a div */}
+
             <div className='px-2'>
               <div className='hover:border hover:border-black bg-[#F1F2F7]'>
                 <img src='/images/FlashSale1.jpg' alt='Product 1' className='w-full' />
-                <div className='flex flex-col sm:flex-row -mt-[2rem] sm:w-[17rem] mr-[2rem]'>
-                  <p className='mx-5 px-2 py-1 bg-white z-10'>
+                <div className='flex flex-col md:flex-row -mt-[2rem] md:-ml-4 lg:ml-0 lg:ml-0 md:w-[17rem]'>
+                  <p className='mx-5 px-1 py-1 bg-white z-12  '>
                     <span className='line-through'>Rs 14000.00</span>
                   </p>
                   <p className='mx-5 px-2 py-1 text-[red] bg-white z-10'>
@@ -94,8 +112,8 @@ const FlashSale = () => {
             <div className='px-2'>
               <div className='hover:border hover:border-black bg-[#F1F2F7]'>
                 <img src='/images/FlashSale2.jpg' alt='Product 1' className='w-full' />
-                <div className='flex flex-col md:flex-row -mt-[2rem] md:w-[17rem]'>
-                  <p className='mx-5 px-2 py-1 bg-white z-10'>
+                <div className='flex flex-col md:flex-row -mt-[2rem] md:-ml-4 lg:ml-0 md:w-[17rem]'>
+                  <p className='mx-5 px-1 py-1 bg-white z-12  '>
                     <span className='line-through'>Rs 14000.00</span>
                   </p>
                   <p className='mx-5 px-2 py-1 text-[red] bg-white z-10'>
@@ -107,11 +125,12 @@ const FlashSale = () => {
               </div>
             </div>
 
+   
             <div className='px-2'>
               <div className='hover:border hover:border-black bg-[#F1F2F7]'>
                 <img src='/images/FlashSale3.jpg' alt='Product 1' className='w-full' />
-                <div className='flex flex-col md:flex-row -mt-[2rem] md:w-[17rem]'>
-                  <p className='mx-5 px-2 py-1 bg-white z-10'>
+                <div className='flex flex-col md:flex-row -mt-[2rem] md:-ml-4 lg:ml-0 md:w-[17rem]'>
+                  <p className='mx-5 px-1 py-1 bg-white z-12  '>
                     <span className='line-through'>Rs 14000.00</span>
                   </p>
                   <p className='mx-5 px-2 py-1 text-[red] bg-white z-10'>
@@ -122,12 +141,13 @@ const FlashSale = () => {
                 <p className='text-gray-400 px-5 pb-5'>Shoes</p>
               </div>
             </div>
+
 
             <div className='px-2'>
               <div className='hover:border hover:border-black bg-[#F1F2F7]'>
                 <img src='/images/FlashSale4.jpg' alt='Product 1' className='w-full' />
-                <div className='flex flex-col md:flex-row -mt-[2rem] md:w-[17rem]'>
-                  <p className='mx-5 px-2 py-1 bg-white z-10'>
+                <div className='flex flex-col md:flex-row -mt-[2rem] md:-ml-4 lg:ml-0 md:w-[17rem]'>
+                  <p className='mx-5 px-1 py-1 bg-white z-12  '>
                     <span className='line-through'>Rs 14000.00</span>
                   </p>
                   <p className='mx-5 px-2 py-1 text-[red] bg-white z-10'>
@@ -142,8 +162,8 @@ const FlashSale = () => {
             <div className='px-2'>
               <div className='hover:border hover:border-black bg-[#F1F2F7]'>
                 <img src='/images/FlashSale5.jpg' alt='Product 1' className='w-full' />
-                <div className='flex flex-col md:flex-row -mt-[2rem] md:w-[17rem]'>
-                  <p className='mx-5 px-2 py-1 bg-white z-10'>
+                <div className='flex flex-col md:flex-row -mt-[2rem] md:-ml-4 lg:ml-0 md:w-[17rem]'>
+                  <p className='mx-5 px-1 py-1 bg-white z-12  '>
                     <span className='line-through'>Rs 14000.00</span>
                   </p>
                   <p className='mx-5 px-2 py-1 text-[red] bg-white z-10'>
@@ -155,11 +175,12 @@ const FlashSale = () => {
               </div>
             </div>
 
+
             <div className='px-2'>
               <div className='hover:border hover:border-black bg-[#F1F2F7]'>
                 <img src='/images/FlashSale6.jpg' alt='Product 1' className='w-full' />
-                <div className='flex flex-col md:flex-row -mt-[2rem] md:w-[17rem]'>
-                  <p className='mx-5 px-2 py-1 bg-white z-10'>
+                <div className='flex flex-col md:flex-row -mt-[2rem] md:-ml-4 lg:ml-0 md:w-[17rem]'>
+                  <p className='mx-5 px-1 py-1 bg-white z-12  '>
                     <span className='line-through'>Rs 14000.00</span>
                   </p>
                   <p className='mx-5 px-2 py-1 text-[red] bg-white z-10'>
