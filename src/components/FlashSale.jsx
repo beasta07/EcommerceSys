@@ -96,7 +96,7 @@ const FlashSale = () => {
             <div className='px-2'>
               <div className='hover:border hover:border-black bg-[#F1F2F7]'>
                 <img src='/images/FlashSale1.jpg' alt='Product 1' className='w-full' />
-                <div className='flex flex-col md:flex-row -mt-[2rem] md:-ml-4 lg:ml-0 lg:ml-0 md:w-[17rem]'>
+                <div className='flex flex-col md:flex-row -mt-[2rem] md:-ml-4 lg:ml-0 md:w-[17rem]'>
                   <p className='mx-5 px-1 py-1 bg-white z-12  '>
                     <span className='line-through'>Rs 14000.00</span>
                   </p>

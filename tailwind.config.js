@@ -12,6 +12,7 @@ module.exports = {
       'lg': '904px',
       'xl': '1200px',
       '2xl': '1400px',
+      '3xl' : '3600px'
     },
     extend: {
       container: {
