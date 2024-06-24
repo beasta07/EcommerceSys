@@ -16,7 +16,7 @@ const JoinUs = () => {
            </button>
            </div>
            <div className='flex'>
-          <img src='/public/images/SummerSale.avif' className='h-[24rem] py-8 mx-16 rounded-lg   hidden lg:block ' />
+          <img src='images/SummerSale.avif' className='h-[24rem] py-8 mx-16 rounded-lg   hidden lg:block ' />
           </div>
         </div>
       </div>
