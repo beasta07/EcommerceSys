@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Slider from 'react-slick';
+import { FaArrowRightLong } from "react-icons/fa6";
 
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -74,17 +75,17 @@ const FlashSale = () => {
         <div className='lg:flex justify-between'>
           <div className='lg:flex gap-16'>
             <h1 className='text-4xl font-semibold mt-[2rem]'>Flash Sale</h1>
-            <div className='lg:text-center text-2xl lg:flex justify-center gap-0 mt-[2rem]  flex '>
-              <span className='bg-black text-white lg:px-3 lg:py-2 py-3 px-4 h-10 mr-5 lg:mr-0 rounded-md'>{formatTime(days)}</span>
+            <div className='lg:text-center text-2xl lg:flex justify-center gap-2 mt-[2rem]  flex '>
+              <span className='bg-black text-white lg:px-3 lg:py-1 py-4 px-4 h-10 mr-5 lg:mr-0 rounded-md'>{formatTime(days)}</span>
               <span className='mr-3 lg:mr-0'>:</span>
-              <span className='bg-black text-white lg:px-3 lg:py-2  py-3 px-4 h-10 mr-5 lg:mr-0 rounded-md'>{formatTime(hours)}</span>
+              <span className='bg-black text-white lg:px-3 lg:py-1  py-3 px-4 h-10 mr-5 lg:mr-0 rounded-md'>{formatTime(hours)}</span>
               <span className='mr-3 lg:mr-0'> :</span>
-              <span className='bg-black text-white lg:px-3 lg:py-2  py-3 px-4 h-10 mr-5 lg:mr-0 rounded-md'>{formatTime(minutes)}</span>
+              <span className='bg-black text-white lg:px-3 lg:py-1  py-3 px-4 h-10 mr-5 lg:mr-0 rounded-md'>{formatTime(minutes)}</span>
               <span className='mr-3 lg:mr-0'>:</span>
-              <span className='bg-black text-white lg:px-3 lg:py-2  py-3 px-4 h-10 mr-5 lg:mr-0 rounded-md'>{formatTime(seconds)}</span>
+              <span className='bg-black text-white lg:px-3 lg:py-1  py-3 px-4 h-10 mr-5 lg:mr-0 rounded-md'>{formatTime(seconds)}</span>
             </div>
           </div>
-          <button className='flex justify-end mt-[2rem] bg-transparent border border-black text-black px-20 py-3 hover:bg-black hover:text-white'>
+          <button className='flex justify-end mt-[2rem] bg-black border border-black hover:text-black hover:bg-white px-20 py-3  text-white'>
             Shop Now
           </button>
         </div>
@@ -94,9 +95,9 @@ const FlashSale = () => {
             {/* Each slide wrapped in a div */}
 
             <div className='px-2'>
-              <div className='hover:border hover:border-black bg-[#F1F2F7]'>
+              <div className='border border-black bg-[white]'>
                 <img src='/images/FlashSale1.jpg' alt='Product 1' className='w-full' />
-                <div className='flex flex-col md:flex-row -mt-[2rem] md:-ml-4 lg:ml-0 md:w-[17rem]'>
+                <div className='flex flex-col md:flex-row mt-2 md:-ml-4 lg:ml-0 md:w-[17rem] border-black'>
                   <p className='mx-5 px-1 py-1 bg-white z-12  '>
                     <span className='line-through'>Rs 14000.00</span>
                   </p>
@@ -104,15 +105,18 @@ const FlashSale = () => {
                     Rs 700.00
                   </p>
                 </div>
-                <p className='px-5 py-2'>Gazelle Shoes</p>
-                <p className='text-gray-400 px-5 pb-5'>Shoes</p>
+                <p className='px-5 py-2 text-back'>Gazelle Shoes</p>
+                <p className='text-gray-400 px-5 pb-4'>Shoes</p>
+                <button className='px-2 mx-24 text-center bg-black py-3 mb-[2rem] rounded-md  text-white '><div className='flex gap-2'>View Details     <FaArrowRightLong className='text-WHITE mt-1' /> </div> </button>
+
               </div>
             </div>
 
+           
             <div className='px-2'>
-              <div className='hover:border hover:border-black bg-[#F1F2F7]'>
+              <div className='border border-black bg-[white]'>
                 <img src='/images/FlashSale2.jpg' alt='Product 1' className='w-full' />
-                <div className='flex flex-col md:flex-row -mt-[2rem] md:-ml-4 lg:ml-0 md:w-[17rem]'>
+                <div className='flex flex-col md:flex-row mt-2 md:-ml-4 lg:ml-0 md:w-[17rem] border-black'>
                   <p className='mx-5 px-1 py-1 bg-white z-12  '>
                     <span className='line-through'>Rs 14000.00</span>
                   </p>
@@ -120,16 +124,18 @@ const FlashSale = () => {
                     Rs 700.00
                   </p>
                 </div>
-                <p className='px-5 py-2'>Gazelle Shoes</p>
-                <p className='text-gray-400 px-5 pb-5'>Shoes</p>
+                <p className='px-5 py-2 text-back'>Gazelle Shoes</p>
+                <p className='text-gray-400 px-5 pb-4'>Shoes</p>
+                <button className='px-2 mx-24 text-center bg-black py-3 mb-[2rem] rounded-md  text-white '><div className='flex gap-2'>View Details     <FaArrowRightLong className='text-WHITE mt-1' /> </div> </button>
+
               </div>
             </div>
-
    
+    
             <div className='px-2'>
-              <div className='hover:border hover:border-black bg-[#F1F2F7]'>
+              <div className='border border-black bg-[white]'>
                 <img src='/images/FlashSale3.jpg' alt='Product 1' className='w-full' />
-                <div className='flex flex-col md:flex-row -mt-[2rem] md:-ml-4 lg:ml-0 md:w-[17rem]'>
+                <div className='flex flex-col md:flex-row mt-2 md:-ml-4 lg:ml-0 md:w-[17rem] border-black'>
                   <p className='mx-5 px-1 py-1 bg-white z-12  '>
                     <span className='line-through'>Rs 14000.00</span>
                   </p>
@@ -137,16 +143,19 @@ const FlashSale = () => {
                     Rs 700.00
                   </p>
                 </div>
-                <p className='px-5 py-2'>Gazelle Shoes</p>
-                <p className='text-gray-400 px-5 pb-5'>Shoes</p>
+                <p className='px-5 py-2 text-back'>Gazelle Shoes</p>
+                <p className='text-gray-400 px-5 pb-4'>Shoes</p>
+                <button className='px-2 mx-24 text-center bg-black py-3 mb-[2rem] rounded-md  text-white '><div className='flex gap-2'>View Details     <FaArrowRightLong className='text-WHITE mt-1' /> </div> </button>
+
               </div>
             </div>
 
 
+  
             <div className='px-2'>
-              <div className='hover:border hover:border-black bg-[#F1F2F7]'>
+              <div className='border border-black bg-[white]'>
                 <img src='/images/FlashSale4.jpg' alt='Product 1' className='w-full' />
-                <div className='flex flex-col md:flex-row -mt-[2rem] md:-ml-4 lg:ml-0 md:w-[17rem]'>
+                <div className='flex flex-col md:flex-row mt-2 md:-ml-4 lg:ml-0 md:w-[17rem] border-black'>
                   <p className='mx-5 px-1 py-1 bg-white z-12  '>
                     <span className='line-through'>Rs 14000.00</span>
                   </p>
@@ -154,15 +163,18 @@ const FlashSale = () => {
                     Rs 700.00
                   </p>
                 </div>
-                <p className='px-5 py-2'>Gazelle Shoes</p>
-                <p className='text-gray-400 px-5 pb-5'>Shoes</p>
+                <p className='px-5 py-2 text-back'>Gazelle Shoes</p>
+                <p className='text-gray-400 px-5 pb-4'>Shoes</p>
+                <button className='px-2 mx-24 text-center bg-black py-3 mb-[2rem] rounded-md  text-white '><div className='flex gap-2'>View Details     <FaArrowRightLong className='text-WHITE mt-1' /> </div> </button>
+
               </div>
             </div>
 
+     
             <div className='px-2'>
-              <div className='hover:border hover:border-black bg-[#F1F2F7]'>
+              <div className='border border-black bg-[white]'>
                 <img src='/images/FlashSale5.jpg' alt='Product 1' className='w-full' />
-                <div className='flex flex-col md:flex-row -mt-[2rem] md:-ml-4 lg:ml-0 md:w-[17rem]'>
+                <div className='flex flex-col md:flex-row mt-2 md:-ml-4 lg:ml-0 md:w-[17rem] border-black'>
                   <p className='mx-5 px-1 py-1 bg-white z-12  '>
                     <span className='line-through'>Rs 14000.00</span>
                   </p>
@@ -170,16 +182,19 @@ const FlashSale = () => {
                     Rs 700.00
                   </p>
                 </div>
-                <p className='px-5 py-2'>Gazelle Shoes</p>
-                <p className='text-gray-400 px-5 pb-5'>Shoes</p>
+                <p className='px-5 py-2 text-back'>Gazelle Shoes</p>
+                <p className='text-gray-400 px-5 pb-4'>Shoes</p>
+                <button className='px-2 mx-24 text-center bg-black py-3 mb-[2rem] rounded-md  text-white '><div className='flex gap-2'>View Details     <FaArrowRightLong className='text-WHITE mt-1' /> </div> </button>
+
               </div>
             </div>
 
 
+
             <div className='px-2'>
-              <div className='hover:border hover:border-black bg-[#F1F2F7]'>
+              <div className='border border-black bg-[white]'>
                 <img src='/images/FlashSale6.jpg' alt='Product 1' className='w-full' />
-                <div className='flex flex-col md:flex-row -mt-[2rem] md:-ml-4 lg:ml-0 md:w-[17rem]'>
+                <div className='flex flex-col md:flex-row mt-2 md:-ml-4 lg:ml-0 md:w-[17rem] border-black'>
                   <p className='mx-5 px-1 py-1 bg-white z-12  '>
                     <span className='line-through'>Rs 14000.00</span>
                   </p>
@@ -187,8 +202,10 @@ const FlashSale = () => {
                     Rs 700.00
                   </p>
                 </div>
-                <p className='px-5 py-2'>Gazelle Shoes</p>
-                <p className='text-gray-400 px-5 pb-5'>Shoes</p>
+                <p className='px-5 py-2 text-back'>Gazelle Shoes</p>
+                <p className='text-gray-400 px-5 pb-4'>Shoes</p>
+                <button className='px-2 mx-24 text-center bg-black py-3 mb-[2rem] rounded-md  text-white '><div className='flex gap-2'>View Details     <FaArrowRightLong className='text-WHITE mt-1' /> </div> </button>
+
               </div>
             </div>
           </Slider>

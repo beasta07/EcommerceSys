@@ -3,7 +3,7 @@ import { IoMdSearch } from 'react-icons/io';
 import { CiHeart, CiShoppingCart } from 'react-icons/ci';
 import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import { AiOutlineClose } from 'react-icons/ai';
+// import { AiOutlineClose } from 'react-icons/ai';
 import { useNavigate } from 'react-router-dom';
 import MegaMenu from './MegaMenu';
 
@@ -325,7 +325,7 @@ const Navbar = () => {
       </div>
 
       <div className='bg-white text-sm font-bold'>
-        <div className='container mx-auto flex justify-between items-center px-4 py-4 relative'>
+        <div className='container mx-auto flex justify-between items-center px-4 py-o relative'>
           <img src='images/logo.jpg' alt='logo' className='h-24 cursor-pointer' onClick={() => navigate("/")} />
 
           <div className='hidden md:flex text-center items-center font-semibold gap-8'>

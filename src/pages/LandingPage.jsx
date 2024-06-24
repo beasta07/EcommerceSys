@@ -38,7 +38,7 @@ const LandingPage = () => {
       
       <hr className="border border-gray-100 py-4 hidden lg:block" />
       
-      <div className='hidden lg:block bg-black pb-32 pt-20'>
+      <div className='hidden lg:block bg-black  py-20'>
         <div className='container mx-auto px-4 flex justify-around md:gap-2 text-white'>
           <div className='flex items-center gap-4'>
             <div className='border border-gray-300 rounded-full p-2'>
